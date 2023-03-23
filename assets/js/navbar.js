@@ -7,3 +7,14 @@ toggleButton.onclick = () => {
   navLinks.classList.toggle("nav-link-active");
   toggleButton.classList.toggle("toggle-active");
 };
+
+document.addEventListener("mouseup", (e) => {
+  if (!navBar.contains(e.target)) {
+    if (toggleButton.classList.contains("toggle-active")) {
+      console.log("Yes")
+      navBar.classList.toggle("nav-active");
+      navLinks.classList.toggle("nav-link-active");
+      toggleButton.classList.toggle("toggle-active");
+    }
+  }
+});
