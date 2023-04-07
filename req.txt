@@ -1,0 +1,3 @@
+tab and mobile different bg
+Arch & Design in new line each for mobile
+nav links underline on hover
