@@ -17,7 +17,7 @@
     ></script>
     <title>SP Arch & Design</title>
   </head>
-  <body>
+  <body onscroll="scrollTracker()">
     <nav class="nav">
       <a href=".">
         <h1 class="logo-header flex">
@@ -34,14 +34,14 @@
       </div>
       <div class="break"></div>
       <ul class="nav-links flex">
-        <li class="nav-link link-active"><a class="nav-anchor" href="#home">HOME</a><span></span></li>
-        <li class="nav-link"><a class="nav-anchor" href="#services">SERVICES</a><span></span></li>
-        <li class="nav-link"><a class="nav-anchor" href="#about">ABOUT</a><span></span></li>
-        <li class="nav-link"><a class="nav-anchor" href="#contact">CONTACT</a><span></span></li>
+        <li class="nav-link home-nav-link link-active"><a class="nav-anchor" href="#home">HOME</a><span></span></li>
+        <li class="nav-link services-nav-link"><a class="nav-anchor" href="#services">SERVICES</a><span></span></li>
+        <li class="nav-link about-nav-link"><a class="nav-anchor" href="#about">ABOUT</a><span></span></li>
+        <li class="nav-link contact-nav-link"><a class="nav-anchor" href="#contact">CONTACT</a><span></span></li>
       </ul>
     </nav>
     <section class="section page-header flex" id="home">
-      <div class="section-content flex page-header-content">
+      <div class="section-content flex page-header-content" id="page-header-content">
         <div class="section-content-header page-header-content-header flex">
           <!-- <h1 class="page-header-content-header">S|P</h1> -->
           <img
@@ -55,8 +55,8 @@
         <a href="#services" class="page-header-content-button">Let's Get Going &nbsp; <i class="fa-solid fa-arrow-down"></i></a>
       </div>
     </section>
-    <!-- <section class="section flex our-services" id="services">
-      <div class="section-content flex our-services-content">
+    <section class="section flex our-services" id="services">
+      <div class="section-content flex our-services-content" id="our-services-content">
         <h1 class="our-services-header">Our Services</h1>
         <div class="our-services-card-container flex">
           <div class="our-services-card">
@@ -65,17 +65,19 @@
           </div>
           <div class="our-services-card">
             <div class="our-services-card-content"></div>
-            <h1 class="our-services-card-footer">New Build</h1>
+            <h1 class="our-services-card-footer">Renovation</h1>
           </div>
           <div class="our-services-card">
             <div class="our-services-card-content"></div>
-            <h1 class="our-services-card-footer">New Build</h1>
+            <h1 class="our-services-card-footer">Office Design</h1>
           </div>
         </div>
+        <a href="." class="our-services-learn-more">Learn More</a>
       </div>
-    </section> -->
+    </section>
 
     <script src="assets/js/navbar.js"></script>
     <script src="assets/js/observer.js"></script>
+    <script src="assets/js/scrollTracker.js"></script>
   </body>
 </html>
