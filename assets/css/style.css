@@ -352,6 +352,7 @@ a {
 
   .nav-active {
     margin-bottom: 20px;
+    height: 150px;
   }
   
   .toggle-active {
