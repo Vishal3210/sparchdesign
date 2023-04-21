@@ -12,8 +12,6 @@ const scrollTracker = () => {
     const scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
     const pageHeaderOffset =  pageHeader.offsetTop + pageHeader.offsetHeight;
     const ourServicesOffset =  ourServices.offsetTop + ourServices.offsetHeight;
-    console.log(scrollTop);
-    console.log(pageHeaderOffset);
     // const aboutOffset =  about.offsetTop + about.offsetHeight;
     // const contactOffset =  contact.offsetTop + contact.offsetHeight;
 

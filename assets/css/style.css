@@ -238,24 +238,22 @@ a {
 .our-services::after {
   content: '';
   position: absolute;
-  top: 55%;
-  height: 45%;
+  top: 50%;
+  height: 50%;
   width: 100%;
-  background-color: lightgrey;
-  /* background-image: url("/assets/images/page_head.jpg");
-  background-size: cover; */
+  background-color: rgba(211, 211, 211, 0.25);
   z-index: -10;
-  /* border-radius: 20% 20% 0 0; */
 }
 
 .our-services-content {
   min-width: 60vw;
+  max-width: 90vw;
 }
 
 .our-services-header {
   font-size: 50px;
   font-family: var(--font);
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .our-services-card-container {
@@ -266,10 +264,10 @@ a {
 }
 
 .our-services-card {
-  cursor: pointer;
-  transition: all 0.5s ease-out;
-  transform: translateX(-300%);
+  transition: all 0.3s ease-out;
+  transform: translateX(-150%);
   opacity: 0;
+  margin: 0 30px 25px;
 }
 
 .our-services-card-show {
@@ -286,10 +284,49 @@ a {
 }
 
 .our-services-card-content {
-  width: 200px;
-  height: 300px;
+  position: relative;
+  width: 300px;
+  height: 400px;
   background-color: yellow;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.our-services-card-img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.our-services-card-content-overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  transition: all 0.5s ease;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  transform: translateX(100%);
+}
+
+.our-services-card-content:hover > .our-services-card-content-overlay {
+  transform: translateX(0%);
+}
+
+.our-services-card-content-overlay-bullet-container {
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  padding: 10px;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.our-services-card-content-overlay-bullet-item {
+  margin: 5px 0px;
 }
 
 .our-services-card-footer {
@@ -369,6 +406,10 @@ a {
   
   .page-header {
     background-image: var(--page-header-background-tab);
+  }
+
+  .our-services-header {
+    margin: 20px;
   }
   
   .our-services-card-container {
